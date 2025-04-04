@@ -3,4 +3,4 @@ pnpm dev
 
 pnpm add @clerk/nextjs
 
-41.56
+pnpm add mongodb mongoose
