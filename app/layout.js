@@ -1,5 +1,7 @@
 import Header from '@/components/Header';
 import './globals.css';
+import { ClerkLoaded, ClerkLoading, ClerkProvider } from '@clerk/nextjs';
+import Loader from '@/components/Loader';
 
 export const metadata = {
   title: 'Next Auth App',
@@ -8,11 +10,18 @@ export const metadata = {
 
 export default function RootLayout({ children }) {
   return (
-    <html lang="en">
-      <body className="antialiased">
-        <Header />
-        {children}
-      </body>
-    </html>
+    <ClerkProvider>
+      <html lang="en">
+        <body className="antialiased">
+          <ClerkLoading>
+            <Loader />
+          </ClerkLoading>
+          <ClerkLoaded>
+            <Header />
+            {children}
+          </ClerkLoaded>
+        </body>
+      </html>
+    </ClerkProvider>
   );
 }

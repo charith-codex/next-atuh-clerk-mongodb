@@ -1,4 +1,6 @@
 pnpm create next-app .
 pnpm dev
 
-https://youtu.be/REfusFIsd2g?t=1038
+pnpm add @clerk/nextjs
+
+41.56
