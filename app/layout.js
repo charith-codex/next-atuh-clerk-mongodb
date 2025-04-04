@@ -1,7 +1,7 @@
-import Header from '@/components/Header';
+import Header from '../components/Header';
 import './globals.css';
 import { ClerkLoaded, ClerkLoading, ClerkProvider } from '@clerk/nextjs';
-import Loader from '@/components/Loader';
+import Loader from '../components/Loader';
 
 export const metadata = {
   title: 'Next Auth App',
