@@ -3,4 +3,6 @@ pnpm dev
 
 pnpm add @clerk/nextjs
 
+pnpm add svix
+
 pnpm add mongodb mongoose
